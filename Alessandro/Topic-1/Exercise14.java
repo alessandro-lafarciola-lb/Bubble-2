@@ -1,5 +1,5 @@
 public class Exercise14 {
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         int a, b, c
         a = 0
         // There's no ; after each statement
@@ -34,5 +34,5 @@ public class Exercise14 {
         // The text is not a String, but a char type because
         // it's using single quotation marks ' '
         // instead of double quotation marks " "
-    }
+    }*/
 }
