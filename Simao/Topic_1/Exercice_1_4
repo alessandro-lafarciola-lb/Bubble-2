@@ -1,0 +1,19 @@
+a) int a, b, c ////(the variables are not defined , and need a ";" in the end of the first line)
+a = 0
+
+b) System.out.println('ab');////( System.out.println(a + "" + b))
+
+c) int d = 3.2; ////( Should have double)
+
+d) float e = 2.1;/////( need a f next to the number)
+
+e) String f = a;///( should have 'a', and should have char not string )
+
+f) int i = 10; ///( j should be initialized)
+float j;
+i = j;
+
+g) boolean g, h;
+g = false, h = true; ///( should have ";" and not "," between the variables"
+
+h) String s = 'This is a string';///(should have "" instead of '')
