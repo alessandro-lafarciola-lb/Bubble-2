@@ -1,7 +1,7 @@
 class Exercise23 {
     public static void main(String[] args) {
         String text_a = "Hello";
-        String text_b = "hello";
+        String text_b = "Hello";
 
         if(text_a.equals(text_b))
             System.out.println("1 - Both texts are equal!");
