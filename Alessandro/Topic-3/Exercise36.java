@@ -5,11 +5,13 @@ public class Exercise36 {
         Scanner s = new Scanner(System.in);
         int value = -1;
         int sum = 0;
+
         while(value != 0) {
-            System.out.println("Type a value: ");
+            System.out.print("Type a value: ");
             value = s.nextInt();
             sum = sum + value;
         }
+
         System.out.println(sum);
     }
 }
