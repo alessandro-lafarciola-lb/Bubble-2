@@ -1,11 +1,27 @@
 public class Exercise35 {
     public static void main(String[] args) {
         /*
-        1 - no increment, infinite loop
+        int n = 0;
+        while( n < 10 ) {
+            System.out.print( n );
+        }
+        // There's no increment, thus it's an infinite loop
 
-        2 - we don`t put a ; there, and also the { isn't closing
+        int b = 0;
+        while( n < 10 );{
+            System.out.print( n );
 
-        3 - condition needs to be == and 'n' wasn't declared
-         */
+        // We don't put a ; directly after a while,
+        // also it lacks a } at the end
+
+        int c = 0, y = 0, x = 1;
+        while( n = 0 ){
+            y = y + x;
+            x++;
+            if(x > 5) n = 1;
+        }
+        // To compare values we need to use ==,
+        // also 'n' wasn't declared
+        */
     }
 }
