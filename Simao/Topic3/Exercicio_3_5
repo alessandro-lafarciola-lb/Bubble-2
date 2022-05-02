@@ -6,7 +6,7 @@ while( n < 10 ) {
 
 b)   int b = 0;///should have n instead of b
 
-while( n < 10 );{
+while( n < 10 );{// semi colon is not needed
 
     System.out.print( n );
 
