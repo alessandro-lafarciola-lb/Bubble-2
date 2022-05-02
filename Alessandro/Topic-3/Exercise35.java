@@ -10,8 +10,10 @@ public class Exercise35 {
         int b = 0;
         while( n < 10 );{
             System.out.print( n );
+            n++;
 
-        // We don't put a ; directly after a while,
+        // The variable 'n' wasn't declared,
+        // we don't put a ; directly after a while,
         // also it lacks a } at the end
 
         int c = 0, y = 0, x = 1;
