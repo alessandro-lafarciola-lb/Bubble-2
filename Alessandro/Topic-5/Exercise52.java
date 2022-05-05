@@ -1,24 +1,33 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.Scanner;
 
 public class Exercise52 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        System.out.print("Type a sentence: ");
-        String text = s.nextLine();
-        ArrayList<String> x = new ArrayList<>();
+        String text = "";
+        String old_list[] = {};
 
-        for(int i = 0; i < text.split(" ").length; i++) {
-            x.add(text.split(" ")[i]);
+        while(old_list.length < 4) {
+            System.out.print("Type a sentence with at least 4 words: ");
+            text = s.nextLine();
+            old_list = text.split(" ");
         }
 
-        System.out.println(x);
-        System.out.println(x.get(2));
-        x.set(1, "0");
-        System.out.println(x);
-        Collections.sort(x);
-        System.out.println(x);
+        ArrayList<String> new_list = new ArrayList<>();
+        for(int i = 0; i < old_list.length; i++) {
+            new_list.add(old_list[i]);
+        }
+
+        System.out.println(new_list);
+
+        System.out.println(new_list.get(2));
+
+        new_list.set(1, "0");
+
+        System.out.println(new_list);
+
+        Collections.sort(new_list);
+        System.out.println(new_list);
     }
 }

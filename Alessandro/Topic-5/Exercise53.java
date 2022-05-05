@@ -1,32 +1,35 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Exercise53 {
     public static void main(String[] args) {
-        ArrayList<String> x = new ArrayList<>();
-        x.add("Dog");
-        x.add("Cat");
-        x.add("Elephant");
-        x.add("Racoon");
-        x.add("No");
-        System.out.println(x);
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Dog");
+        list.add("Cat");
+        list.add("Elephant");
+        list.add("Racoon");
+        list.add("Hamster");
+        System.out.println(list);
 
-        x.add("Camel");
-        System.out.println(x);
+        list.add("Camel");
+        System.out.println(list);
 
-        x.remove(0);
-        System.out.println(x);
+        list.remove(0);
+        System.out.println(list);
 
-        System.out.println("The size is " + x.size());
+        System.out.println("The size is " + list.size());
 
-        System.out.println(x.get(2) + "\n");
+        System.out.println(list.get(2) + "\n");
 
-        for(int i = 0; i < x.size(); i++) {
-            System.out.println(x.get(i));
+        Iterator ite = list.iterator();
+
+        while(ite.hasNext()) {
+            System.out.println(ite.next());
         }
         System.out.println();
-        for(int i = 0; i < x.size(); i++) {
-            if(x.get(i).contains("e")) {
-                System.out.println(x.get(i));
+        for(int i = 0; i < list.size(); i++) {
+            if(list.get(i).contains("e")) {
+                System.out.println(list.get(i));
             }
         }
     }
